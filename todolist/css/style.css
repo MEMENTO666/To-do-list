@@ -3,15 +3,8 @@
   display: none;
 }
 
-/* .firstDiv {
+.firstDiv {
   background-color: red;
-} */
-
-
-#wrap {
-  width:100vw;
-  height: 100vh;
-  background-color: gray;
 }
 
 .inCenter {
@@ -21,13 +14,15 @@
   justify-content: center;
   width:100vw;
   height: 100vh;
+  background-color: gray;
+
 
 }
 
 #clock {
-  /* display: block; */
-  font-size: 5em;
+  font-size: 7em;
   font-weight: bold;
+  color: white;
 }
 
 #greeting {
@@ -36,24 +31,42 @@
 }
 
 .toDoInput {
-  border-bottom: 1px solid white;
+  border: 3px solid black;
+  /* background: none; */
+  width:50vw;
+  height:3vh;
+  margin-top: 50px;
 }
 
 input::placeholder {
-  color: white;
+  color: crimson;
+}
+
+.toDOLi {
+  font-size: 20px;
+  
+}
+
+.deButton {
+  background: none;
+  border: none;
+  width:30px;
+  height: 30px;
 }
 
 #quote {
-  margin-top:50px;
+  margin-top:150px;
 }
 
-#quote >span:nth-child(1) {
+#quote span:first-child {
   font-size: 16px;
   color: white;
 }
-#quote >span:nth-child(2) {
+
+#quote span:last-child {
   font-size: 16px;
   font-weight: bold;
+  color:blue;
 }
 
 #weather {

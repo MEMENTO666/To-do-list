@@ -13,9 +13,12 @@ const quotes = [
 ]
 
 const quote = document.querySelector("#quote span:first-child");
+
 const author = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+//! 명언 랜덤으로 생성.
 
 quote.innerText = todaysQuote.quote; //명언
 author.innerText = todaysQuote.author; //명언 저자
