@@ -44,7 +44,7 @@ input::placeholder {
 
 .toDOLi {
   font-size: 20px;
-  
+
 }
 
 .deButton {
@@ -70,7 +70,14 @@ input::placeholder {
 }
 
 #weather {
-  position: fixed;
-  bottom: 0;
-  font-size: 20px;
+  position: relative;
+  top: 180px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:60vw;
+  height:5vh;
+  font-weight: bold;
+  color: rgb(49, 216, 34);
 }
