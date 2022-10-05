@@ -3,22 +3,35 @@
   display: none;
 }
 
+/* .firstDiv {
+  background-color: red;
+} */
+
+
+#wrap {
+  width:100vw;
+  height: 100vh;
+  background-color: gray;
+}
+
 .inCenter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width:100vw;
+  height: 100vh;
 
 }
 
 #clock {
-  display: block;
+  /* display: block; */
   font-size: 5em;
   font-weight: bold;
 }
 
 #greeting {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -30,3 +43,21 @@ input::placeholder {
   color: white;
 }
 
+#quote {
+  margin-top:50px;
+}
+
+#quote >span:nth-child(1) {
+  font-size: 16px;
+  color: white;
+}
+#quote >span:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#weather {
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
+}
