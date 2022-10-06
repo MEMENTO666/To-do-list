@@ -48,19 +48,21 @@ function paintToDo(newTodo) {
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   span.style.fontSize = "15px";
+  span.style.color = "white";
   span.style.fontWeight = "bold";
   const button = document.createElement("button");
-  button.innerText = "X";
+  button.innerText = "x";
   button
       .classList
       .add("deButton");
   button.style.color = "crimson";
-  button.style.fontSize = "16px";
+  button.style.fontSize = "17px";
   button.style.fontWeight = "bold";
   button.addEventListener("click", deleteTodo)
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);
+  li.style.marginBottom = "10px";
 };
 
 //! 할일 목록 생성, X버튼 생성, 
@@ -84,7 +86,7 @@ const savedToDos = localStorage.getItem(toDos_key);
 
 if (savedToDos) {
     const parsedToDos = JSON.parse(savedToDos);
-    toDos = parsedToDos
+    // toDos = parsedToDos;
     //toDos 배열은 브라우저 시작시 []로 null이기 때문에 로컬스토리지의 내용들을 읽어옴
     parsedToDos.forEach(paintToDo);
 };

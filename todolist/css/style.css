@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width:100vw;
   height: 100vh;
   background-color: gray;
@@ -15,21 +14,29 @@
   background-position: center;
   background-size: cover;
   backdrop-filter: blur(20px);
-  /* background-image: url(../img/1.jpg); */
 
+}
 
+#todo-form {
+  height:50px
 }
 
 #clock {
   font-size: 8em;
   font-weight: bold;
   color: white;
-  text-shadow: 5px 5px 5px black;
+  /* text-shadow: 5px 5px 5px black; */
+  margin-bottom: 100px;
   
 }
 
 #greeting {
   font-size: 25px;
+  color: white;
+  /* text-shadow: 3px 3px black; */
+  margin-bottom: 100px;
+  height:2px;
+
   
 }
 
@@ -38,9 +45,10 @@
   box-shadow: 3px 5px 2px 2px;
   color: rgba(0, 0, 0, 0.61);
   /* background: none; */
-  width:50vw;
+  width:30vw;
   height:3vh;
-  margin-top: 50px;
+  margin-bottom: 270px;
+
 }
 
 input::placeholder {
@@ -48,15 +56,16 @@ input::placeholder {
 }
 
 .toDOLi {
-  font-size: 20px;
+  font-size: 12px;
 
 }
 
 .deButton {
   background: none;
+  width:20px;
+  height: 20px;
+  margin-left: 10px;
   border: none;
-  width:30px;
-  height: 30px;
 }
 
 #quote {
@@ -65,7 +74,7 @@ input::placeholder {
 
 #quote span:first-child {
   font-size: 16px;
-  color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
   letter-spacing: 3px;
   font-weight: bold;
 

@@ -5,7 +5,7 @@ const loginButton = document.querySelector("#loginForm button");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
-const USERNAME_KEY = "username";
+const USERNAME_KEY = "";
 
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -14,7 +14,7 @@ function onLoginSubmit(event) {
 
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username)
-  greeting.innerText = `반갑습니다. ${username}`;
+  greeting.innerText = `환영합니다. ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 };
 
