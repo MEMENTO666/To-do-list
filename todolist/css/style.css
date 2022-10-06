@@ -3,10 +3,6 @@
   display: none;
 }
 
-.firstDiv {
-  background-color: red;
-}
-
 .inCenter {
   display: flex;
   flex-direction: column;
@@ -15,23 +11,32 @@
   width:100vw;
   height: 100vh;
   background-color: gray;
+  background-image: url(../img/0.jpg);
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+  /* background-image: url(../img/1.jpg); */
 
 
 }
 
 #clock {
-  font-size: 7em;
+  font-size: 8em;
   font-weight: bold;
   color: white;
+  text-shadow: 5px 5px 5px black;
+  
 }
 
 #greeting {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 25px;
+  
 }
 
 .toDoInput {
-  border: 3px solid black;
+  border: 1px solid black;
+  box-shadow: 3px 5px 2px 2px;
+  color: rgba(0, 0, 0, 0.61);
   /* background: none; */
   width:50vw;
   height:3vh;
@@ -39,7 +44,7 @@
 }
 
 input::placeholder {
-  color: crimson;
+  color: gray;
 }
 
 .toDOLi {
@@ -55,23 +60,33 @@ input::placeholder {
 }
 
 #quote {
-  margin-top:150px;
+  margin-top:100px;
 }
 
 #quote span:first-child {
   font-size: 16px;
-  color: white;
+  color: rgb(53, 53, 53);
+  letter-spacing: 3px;
+  font-weight: bold;
+
+
 }
 
 #quote span:last-child {
   font-size: 16px;
   font-weight: bold;
-  color:blue;
+  color:rgb(0, 247, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  backdrop-filter: blur(1px);
+
 }
 
 #weather {
   position: relative;
-  top: 180px;
+  top: 140px;
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -79,5 +94,7 @@ input::placeholder {
   width:60vw;
   height:5vh;
   font-weight: bold;
-  color: rgb(49, 216, 34);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(2px);
+
 }

@@ -1,18 +1,23 @@
+
+
 const images = [
-  "0.png","1.png","2.png"
+  // "0.jpg",
+  "1.jpg",
 ];
 
-const chosenImage = image[Math.floor(Math.random()*
-  images.length
-  )];
+const chosenImage = images[Math.floor(Math.random()*
+  images.length)];
 
   //! Math.floor >> 숫자의 소수점 이하의 잘림 처리를 위해 사용.
   //! Math.random >> 여러개의 이미지를 랜덤으로 뽑아내기 위해 사용.
 
   const bgi = document.createElement("img");
 
-  bgi.src = `img/${chosenImage}`;
-  const body = document.querySelector("body");
+  bgi.src = `url/${chosenImage}`;
+  const body = document.querySelector(".inCenter");
 
-  //! id,class를 제한하지 않고 css 선택자 body 요소를 찾음.
-  
+  document.body.style.backgroundImage = bgi;
+
+  //! id,class를 제한하지 않고 css 선택자 body 요소를 찾음.  
+
+
