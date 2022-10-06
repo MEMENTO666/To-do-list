@@ -49,7 +49,7 @@ function paintToDo(newTodo) {
   span.innerText = newTodo.text;
   span.style.fontSize = "15px";
   span.style.color = "white";
-  span.style.fontWeight = "bold";
+  span.style.fontWeight = "bold"; 
   const button = document.createElement("button");
   button.innerText = "x";
   button
