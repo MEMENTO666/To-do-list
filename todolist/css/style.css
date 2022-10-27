@@ -74,7 +74,7 @@ input::placeholder {
 
 #quote span:first-child {
   font-size: 16px;
-  color: rgb(255, 255, 255);
+  color: rgba(233, 233, 233, 0.801);
   letter-spacing: 3px;
   font-weight: bold;
 
@@ -84,7 +84,7 @@ input::placeholder {
 #quote span:last-child {
   font-size: 16px;
   font-weight: bold;
-  color:rgb(0, 247, 255);
+  color:rgb(241, 238, 7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,3 +107,21 @@ input::placeholder {
   backdrop-filter: blur(2px);
 
 }
+
+@media screen and (max-width:768px) {
+ #clock {
+  font-size: 7rem;
+}
+.toDoInput {
+  border: 1px solid black;
+  box-shadow: 3px 5px 2px 2px;
+  color: rgba(0, 0, 0, 0.61);
+  /* background: none; */
+  width:70vw;
+  height:4vh;
+  margin-bottom: 270px;
+}
+
+}
+  
+

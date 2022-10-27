@@ -25,13 +25,20 @@ const bg = document.querySelector(".inCenter");
 
 
 const BG_List = [
-  "https://user-images.githubusercontent.com/59393359/74718667-0adb8a80-5276-11ea-8bc3-0e36c67cf28a.jpg",
-  "https://user-images.githubusercontent.com/59393359/74718765-30689400-5276-11ea-8a91-dd7ce797074b.jpg",
-  "https://user-images.githubusercontent.com/59393359/74718795-3f4f4680-5276-11ea-9f52-58bb99cb2db0.jpg",
-  "https://user-images.githubusercontent.com/59393359/74720865-cb16a200-5279-11ea-9318-05e4f75b1106.jpg",
-  "https://user-images.githubusercontent.com/59393359/74720904-e2ee2600-5279-11ea-9440-3b3eb9904c22.jpg",
-  "https://user-images.githubusercontent.com/59393359/74720910-e41f5300-5279-11ea-9c63-ff84698e3c7f.jpg",
-  "https://user-images.githubusercontent.com/59393359/74720914-e4b7e980-5279-11ea-9532-c262caf64f00.jpg"
+  "https://bnetcmsus-a.akamaihd.net/cms/blog_header/ki/KI5Z7EH68HEA1589910860503.jpg",
+
+  "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/2PCH8OTFJNZO1589912853448.jpg",
+
+  "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VDQ10E2VMI9T1589912855089.jpg",
+
+  "https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/8CWRD8QS6L2G1589912849876.jpg",
+
+
+  "https://t1.daumcdn.net/cfile/tistory/99D624505DF873581A?original",
+
+  "https://t1.daumcdn.net/cfile/tistory/998AF2425DF8736203?original",
+
+  "https://t1.daumcdn.net/cfile/tistory/99DB344D5DF8739620?original",
   ]
   
   const randomBG = Math.floor(Math.random() * BG_List.length);
